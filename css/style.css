@@ -568,7 +568,12 @@ body:before {
 /*------------------------------------------------------------------------------
 DIVS
 ------------------------------------------------------------------------------*/	
-header, section, nav {
+header {
+   margin: 0 auto -20px;
+   width: 1100px;
+   position: relative;
+}
+section, nav {
    float: left;
    width: 1000px;
    min-height: 20px;
@@ -593,14 +598,17 @@ header, section, nav {
    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=180, Color='#cccccc');
 }
 
-/*------------------------------------------------------------------------------
+/*==============================================================================
 NAVIGATION  
-------------------------------------------------------------------------------*/		
+==============================================================================*/		
 nav.nav {
     width: 1100px;
     display: block;
 }
 
+/*------------------------------------------------------------------------------
+Blue Navigation  
+------------------------------------------------------------------------------*/		
 nav.bluenav {
    /*position or float*/
     background:-moz-linear-gradient(19% 75% 90deg,#183b6f,#0a4899);
@@ -608,6 +616,20 @@ nav.bluenav {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 2px 2px 10px #666;
+}
+
+/*------------------------------------------------------------------------------
+Tertiary Navigation  
+------------------------------------------------------------------------------*/		
+nav.tertiary {
+   float: right;
+   width: auto;   /* Overwrite of default nav width: 1000px */
+   margin: -29px 0 15px;
+}
+nav.tertiary li {
+   float: left;
+   margin: 0 0 0 10px;
+   list-style: none;
 }
 
 /*------------------------------------------------------------------------------	
