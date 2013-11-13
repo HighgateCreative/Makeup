@@ -1,0 +1,22 @@
+{
+  "name": "Makeup",
+  "version": "0.2.0",
+  "description": "Putting a coat of paint on your app. Making it pretty for the fashion pageant.",
+  "main": "css/style.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HighgateCross/Makeup.git"
+  },
+  "keywords": [
+    "css",
+    "app",
+    "style"
+  ],
+  "author": "Sean Zellmer @lejeunerenard",
+  "license": "GPLv2",
+  "readmeFilename": "README.md",
+  "gitHead": "2d680de0fa54aed53167a6a24c7454ede89e8128"
+}
