@@ -18,5 +18,13 @@
   "author": "Sean Zellmer @lejeunerenard",
   "license": "GPLv2",
   "readmeFilename": "README.md",
-  "gitHead": "2d680de0fa54aed53167a6a24c7454ede89e8128"
+  "gitHead": "2d680de0fa54aed53167a6a24c7454ede89e8128",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  }
 }
