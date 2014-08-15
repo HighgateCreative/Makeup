@@ -17,61 +17,61 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	/*font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;*/
-	vertical-align: baseline;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   /*font-weight: inherit;
+   font-style: inherit;
+   font-size: 100%;
+   font-family: inherit;*/
+   vertical-align: baseline;
 }
 /* remember to define focus styles! */
 :focus {
-	outline: 0;
+   outline: 0;
 }
 
 /* grand catch */
 
 body {
-	line-height: 1;
-	color: #999;
-	background: white;
+   line-height: 1;
+   color: #999;
+   background: white;
 }
 ol, ul {
-	list-style: none;
+   list-style: none;
 }
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-	border-collapse: separate;
-	border-spacing: 0;
+   border-collapse: separate;
+   border-spacing: 0;
 }
 caption, th, td {
-	text-align: left;
-	font-weight: normal;
+   text-align: left;
+   font-weight: normal;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: "";
+   content: "";
 }
 blockquote, q {
-	quotes: "" "";
+   quotes: "" "";
 }
 
 /*------------------------------------------------------------------------------
 HIGHSITE HTML PREFERENCES
-------------------------------------------------------------------------------*/	
+------------------------------------------------------------------------------*/
 * {
    font-family: verdana, serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	margin-bottom: .8em;
+   margin-bottom: .8em;
 }
 
 h1, h2, h3, h4 {
-	letter-spacing: -.02em;
+   letter-spacing: -.02em;
 }
 h1, h2, h3, h4, h5, h6 { word-spacing: 0.25px; }
 
@@ -93,7 +93,7 @@ h3 { color: #c00; }
 
 /*------------------------------------------------------------------------------
 WEB.FONTS
-------------------------------------------------------------------------------*/	
+------------------------------------------------------------------------------*/   
 /*
 h1, h2, h3, h4, h5, h6, b, strong, th {
    font-style: normal;
@@ -126,10 +126,10 @@ i, em {
 
 /*------------------------------------------------------------------------------
 SITE-WIDE HTML
-------------------------------------------------------------------------------*/	
+------------------------------------------------------------------------------*/   
 body {
-	margin: 0;
-	background: #ccc; /*url(/xm_client/images/body-top-background.jpg) repeat-x top*/;
+   margin: 0;
+   background: #ccc; /*url(/xm_client/images/body-top-background.jpg) repeat-x top*/;
 }
 
 a { text-decoration: none; }
@@ -142,8 +142,8 @@ html, body {height: 100%;}
 
 .container {
     position: relative;
-	margin: 20px auto;
-	width: 1000px;
+   margin: 20px auto;
+   width: 1000px;
     overflow: auto;
     min-height: 100%;
     padding: 50px;
@@ -262,7 +262,7 @@ body:before {
 
 /*------------------------------------------------------------------------------
 DIVS
-------------------------------------------------------------------------------*/	
+------------------------------------------------------------------------------*/   
 header {
    margin: 0 auto -20px;
    width: 1100px;
@@ -295,7 +295,7 @@ section, nav {
 
 /*==============================================================================
 NAVIGATION  
-==============================================================================*/		
+==============================================================================*/      
 nav.nav {
     width: 1100px;
     display: block;
@@ -303,7 +303,7 @@ nav.nav {
 
 /*------------------------------------------------------------------------------
 Blue Navigation  
-------------------------------------------------------------------------------*/		
+------------------------------------------------------------------------------*/      
 nav.bluenav {
    /*position or float*/
     background:-moz-linear-gradient(19% 75% 90deg,#183b6f,#0a4899);
@@ -315,7 +315,7 @@ nav.bluenav {
 
 /*------------------------------------------------------------------------------
 Tertiary Navigation  
-------------------------------------------------------------------------------*/		
+------------------------------------------------------------------------------*/      
 nav.tertiary {
    float: right;
    width: auto;   /* Overwrite of default nav width: 1000px */
@@ -327,15 +327,15 @@ nav.tertiary li {
    list-style: none;
 }
 
-/*------------------------------------------------------------------------------	
+/*------------------------------------------------------------------------------   
 HORIZONTAL MENU
-------------------------------------------------------------------------------*/		
+------------------------------------------------------------------------------*/      
 
 /*CONTROLS ALL LISTS*/ 
 #menuh { 
-	float: left;
-	display: inline;
-	list-style: none;
+   float: left;
+   display: inline;
+   list-style: none;
 }
 
 /*----- BELOW THREE DIVS CONTROL ALL LIST ITEMS -----*/
@@ -348,18 +348,18 @@ HORIZONTAL MENU
 }
 
 #menuh li a {
-	display: block;
-	font-size: 14px;
-	line-height: 16px;/*set vert spacing between li's and the main UL... */
-	text-transform: uppercase;  /*...from the top of the nav div and the top of the... */
-	letter-spacing: .05em;        /*...flydown from bottom of the top ul, and left and right... */
-	color: #ffffff;              /*...distances between edges of type and left of li */
-	text-decoration: none;
+   display: block;
+   font-size: 14px;
+   line-height: 16px;/*set vert spacing between li's and the main UL... */
+   text-transform: uppercase;  /*...from the top of the nav div and the top of the... */
+   letter-spacing: .05em;        /*...flydown from bottom of the top ul, and left and right... */
+   color: #ffffff;              /*...distances between edges of type and left of li */
+   text-decoration: none;
 }
 #menuh li a { padding: 7px 30px 6px 30px; }
 
 #menuh li a:hover {
-	color: #aaa;
+   color: #aaa;
     background-color: #fff;
 }
 #menuh li a.current_top_menu_item {
@@ -369,19 +369,19 @@ HORIZONTAL MENU
 /*CONTROLS SECOND-LEVEL LIST ITEMS OR FLY-DOWNS*/ 
 
 #menuh li ul {  
-	position: absolute;
-	margin: 0 0 0 0;
-	padding: 0;
-	left: -999em;
-	z-index: 1;
+   position: absolute;
+   margin: 0 0 0 0;
+   padding: 0;
+   left: -999em;
+   z-index: 1;
     box-shadow: 1px 2px 4px #777;
 }
 
 #menuh ul {
-	float: left;
-	padding: 0;
-	list-style: none;
-	width: 160px; /* can be anything AFAIK, but it has to be there*/
+   float: left;
+   padding: 0;
+   list-style: none;
+   width: 160px; /* can be anything AFAIK, but it has to be there*/
 }
 
 #menuh ul li { 
@@ -394,40 +394,40 @@ HORIZONTAL MENU
 }
 
 #menuh ul li a {
-	display: block;
-	padding: 8px 30px 5px 10px;
+   display: block;
+   padding: 8px 30px 5px 10px;
     color: #aaa;
-	background-color: #fff;
-	width: 120px; /* master width minus left & right padding */
-	border-top: 1px solid #ccc;
+   background-color: #fff;
+   width: 120px; /* master width minus left & right padding */
+   border-top: 1px solid #ccc;
 }
 
 #menuh ul li a:hover {
-	color: #ffffff;
-	background-color: #aaa; 
+   color: #ffffff;
+   background-color: #aaa; 
 }
 
 /*CONTROLS THIRD-AND ABOVE LEVEL LIST ITEMS*/
 #menuh li ul li ul {   
-	margin: -22px 0 0 161px; /* the -top px vertically positions the right flyout */
+   margin: -22px 0 0 161px; /* the -top px vertically positions the right flyout */
     width: 160px; /*...and the left margin is ul-li-a horiz spacing+width+1/0 */
 }
 
 #menuh li ul li ul li a {   
-	background-color: #aaa; 
+   background-color: #aaa; 
     color: #fff;
 }
 #menuh li ul li ul li a:hover {   
-	color: #aaa;
-	background-color: #fff; 
+   color: #aaa;
+   background-color: #fff; 
 }
 
 /* lists nested under hovered list items */
 #menuh li:hover ul ul, #menuh li:hover ul ul ul, #menuh li:hover ul ul ul ul, #menuh li.sfhover ul ul, #menuh li.sfhover ul ul ul, #menuh li.sfhover ul ul ul ul {
-	left: -999em;
+   left: -999em;
 }
 #menuh li:hover ul, #menuh li li:hover ul, #menuh li li li:hover ul, #menuh li li li li:hover ul, #menuh li.sfhover ul, #menuh li li.sfhover ul, #menuh li li li.sfhover ul, #menuh li li li li.sfhover ul {
-	left: auto;
+   left: auto;
 }
 
 /* ----- footer menu --- */
@@ -438,9 +438,9 @@ HORIZONTAL MENU
     margin: 30px 0 0 0;
 }
 .menu2 { 
-	display: inline;
-	list-style: none;
-	width: 850px;
+   display: inline;
+   list-style: none;
+   width: 850px;
 }
 
 .menu2 li { float: left; margin: 0;}
@@ -462,32 +462,32 @@ HORIZONTAL MENU
 }
 .menu2 li ul {
    position: relative;
-	left: 0;
-	list-style: none;
+   left: 0;
+   list-style: none;
 }
 
 .menu2 ul {
    float: left;
    margin: 0;
    padding: 0;
-	width: 140px; 
+   width: 140px; 
 }
 
 .menu2 ul li a {
-	display: block;
+   display: block;
    text-transform: capitalize !important;
    text-align: left;
-	padding: 0;
-	width: 100px; 
+   padding: 0;
+   width: 100px; 
    line-height: 15px;
    margin: 5px 0 0 0;
    font-weight: normal !important
 }
 .menu2 ul li a:hover {
-	color: #999;
+   color: #999;
 }
 
-/*------------------------------------------------------------------------------	
+/*------------------------------------------------------------------------------   
 SECONDARY NAV MENU
 ------------------------------------------------------------------------------*/
 
@@ -495,8 +495,8 @@ SECONDARY NAV MENU
     position:relative;
     top: 34px;
     float: right;
-	display: inline;
-	list-style: none;
+   display: inline;
+   list-style: none;
     z-index:999;
 }
 
@@ -515,7 +515,7 @@ SECONDARY NAV MENU
     color: #666;
 }
 
-/*------------------------------------------------------------------------------	
+/*------------------------------------------------------------------------------   
 Sections
 ------------------------------------------------------------------------------*/
 
