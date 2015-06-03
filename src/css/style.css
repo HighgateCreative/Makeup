@@ -150,7 +150,8 @@ html, body {
 .container {
   position: relative;
   margin: 20px auto;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   overflow: auto;
   min-height: 100%;
   padding: 50px;
@@ -169,7 +170,8 @@ html, body {
 .dialog {
   margin: 0 auto 30px;
   position: relative;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   border-radius: 6px;
   background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
   background: -webkit-linear-gradient(top, #fff 0%, #ddd 100%);
@@ -205,7 +207,8 @@ section {
 .centered {
   position: relative;
   margin: 0 auto;
-  width: 1100px; }
+  max-width: 1000px;
+  width: 100%; }
 
 /*------------------------------------------------------------------------------
 LISTS
@@ -258,14 +261,19 @@ body:before {
 /*------------------------------------------------------------------------------
 DIVS
 ------------------------------------------------------------------------------*/
+header, section, nav, body, div {
+  box-sizing: border-box; }
+
 header {
-  margin: 0 auto -20px;
-  width: 1000px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
   position: relative; }
 
 section, nav {
   float: left;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   min-height: 20px; }
 
 /* universal stuff */
@@ -292,7 +300,8 @@ section, nav {
 NAVIGATION  
 ==============================================================================*/
 nav.nav {
-  width: 1100px;
+  max-width: 1000px;
+  width: 100%;
   display: block; }
 
 /*------------------------------------------------------------------------------
