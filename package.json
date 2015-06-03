@@ -1,6 +1,6 @@
 {
   "name": "Makeup",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Putting a coat of paint on your app. Making it pretty for the fashion pageant.",
   "main": "css/style.css",
   "scripts": {
