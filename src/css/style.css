@@ -192,6 +192,10 @@ html, body {
 
 .dialog_main {
   padding: 10px 30px 30px 30px; }
+  .dialog_main:after {
+    content: " ";
+    clear: both;
+    display: block; }
 
 .dialog_main, .dialog_main table, .dialog_main ul, .dialog_main form, .dialog_main select {
   color: #444; }
@@ -321,7 +325,7 @@ Tertiary Navigation
 nav.tertiary {
   float: right;
   width: auto;
-  /* Overwrite of default nav width: 1000px */
+  /* Overwrite of default nav width: $max-width */
   margin: -29px 0 15px; }
 
 nav.tertiary li {

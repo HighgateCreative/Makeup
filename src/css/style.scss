@@ -186,6 +186,13 @@ html, body {height: 100%;}
 
 .dialog_main {
     padding: 10px 30px 30px 30px;
+
+    &:after {
+       content: " ";
+       clear: both;
+       display: block;
+
+    }
 }
 .dialog_main, .dialog_main table, .dialog_main ul, .dialog_main form, .dialog_main select {
     color: #444;
