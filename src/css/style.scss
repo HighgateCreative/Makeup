@@ -49,7 +49,7 @@ sub {
     vertical-align: sub;
     font-size: smaller;
 }
-/* 
+/*
 div, aside, nav, header, section, footer {
     @include box-sizing(border-box);
 }
@@ -66,7 +66,7 @@ HIGHSITE HTML PREFERENCES
 ------------------------------------------------------------------------------*/
 * { font-family: verdana, serif; }
 
-h1, h2, h3, h4, h5, h6, p { 
+h1, h2, h3, h4, h5, h6, p {
     margin-bottom: .2em;
     font-weight: normal;
 }
@@ -106,9 +106,9 @@ p {
 }
 p, td { font-size: 100% }
 a, i, em, span, q {
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 b, strong {
 }
@@ -125,12 +125,12 @@ a {
 }
 /*------------------------------------------------------------------------------
 SITE-WIDE HTML
-------------------------------------------------------------------------------*/   
+------------------------------------------------------------------------------*/
 $max-width: 1000px;
 
 body {
-   margin: 0;
-   background: #fff; /*url(/xm_client/images/body-top-background.jpg) repeat-x top*/;
+    margin: 0;
+    background: #fff; /*url(/xm_client/images/body-top-background.jpg) repeat-x top*/;
 }
 
 
@@ -167,9 +167,9 @@ html, body {height: 100%;}
     padding: 10px 30px 30px 30px;
 
     &:after {
-       content: " ";
-       clear: both;
-       display: block;
+        content: " ";
+        clear: both;
+        display: block;
 
     }
 }
@@ -180,7 +180,7 @@ html, body {height: 100%;}
     background-color: #444;
 }
 section {
-   overflow:auto;
+    overflow:auto;
     margin-bottom: 30px;
     max-width: 100%;
 }
@@ -227,10 +227,10 @@ FOOTER
 ------------------------------------------------------------------------------*/
 
 footer { /*or just footer */
-   position: relative;
-   height: 100px; /* same as footer height */
+    position: relative;
+    height: 100px; /* same as footer height */
     text-align:center;
-   clear:both;
+    clear:both;
     color: #888;
     padding: 30px;
     font-size: 13px
@@ -243,46 +243,46 @@ footer address {
 
 /*Opera Fix*/
 body:before {
-   content:"";
-   height:100%;
-   float:left;
-   width:0;
-   margin-top:-32767px;
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
 }
 
 /*------------------------------------------------------------------------------
 DIVS
-------------------------------------------------------------------------------*/   
+------------------------------------------------------------------------------*/
 header, section, nav, body, div {
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header {
-   margin: 0 auto;
-   max-width: $max-width;
-   width: 100%;
-   position: relative;
+    margin: 0 auto;
+    max-width: $max-width;
+    width: 100%;
+    position: relative;
 }
 section, nav {
-   float: left;
-   max-width: $max-width;
-   width: 100%;
-   min-height: 20px;
+    float: left;
+    max-width: $max-width;
+    width: 100%;
+    min-height: 20px;
 }
 
 /* universal stuff */
 .intro, .left-box, .center-box, .right-box, .home-side-bar, .main_col, .right_col {
-   background: #fff;
-   box-sizing: border-box; /* IE and others */
-   -moz-box-sizing:border-box; /* Firefox */
-   -webkit-box-sizing:border-box; /* Safari */   
-   padding: 20px 30px 20px 20px;
+    background: #fff;
+    box-sizing: border-box; /* IE and others */
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding: 20px 30px 20px 20px;
 }
 
 
 /*==============================================================================
-NAVIGATION  
-==============================================================================*/      
+NAVIGATION
+==============================================================================*/
 nav.nav {
     max-width: 100%;
     width: 100%;
@@ -290,40 +290,40 @@ nav.nav {
 }
 
 /*------------------------------------------------------------------------------
-Blue Navigation  
-------------------------------------------------------------------------------*/      
+Blue Navigation
+------------------------------------------------------------------------------*/
 nav.bluenav {
     background-color: #0a4899;
 }
 
 /*------------------------------------------------------------------------------
-Tertiary Navigation  
-------------------------------------------------------------------------------*/      
+Tertiary Navigation
+------------------------------------------------------------------------------*/
 nav.tertiary {
-   float: right;
-   width: auto;   /* Overwrite of default nav width: $max-width */
-   margin: -29px 0 15px;
+    float: right;
+    width: auto;   /* Overwrite of default nav width: $max-width */
+    margin: -29px 0 15px;
 }
 nav.tertiary li {
-   float: left;
-   margin: 0 0 0 10px;
-   list-style: none;
+    float: left;
+    margin: 0 0 0 10px;
+    list-style: none;
 }
 
-/*------------------------------------------------------------------------------   
+/*------------------------------------------------------------------------------
 HORIZONTAL MENU
-------------------------------------------------------------------------------*/      
+------------------------------------------------------------------------------*/
 
-/*CONTROLS ALL LISTS*/ 
-#menuh { 
-   float: left;
-   display: inline;
-   list-style: none;
+/*CONTROLS ALL LISTS*/
+#menuh {
+    float: left;
+    display: inline;
+    list-style: none;
 }
 
 /*----- BELOW THREE DIVS CONTROL ALL LIST ITEMS -----*/
 
-#menuh li { 
+#menuh li {
     list-style: none;
     float: left;
     margin: 0;
@@ -332,43 +332,43 @@ HORIZONTAL MENU
 }
 
 #menuh li a {
-   display: block;
-   font-size: 14px;
-   line-height: 16px;/*set vert spacing between li's and the main UL... */
-   text-transform: uppercase;  /*...from the top of the nav div and the top of the... */
-   letter-spacing: .05em;        /*...flydown from bottom of the top ul, and left and right... */
-   color: #ffffff;              /*...distances between edges of type and left of li */
-   text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;/*set vert spacing between li's and the main UL... */
+    text-transform: uppercase;  /*...from the top of the nav div and the top of the... */
+    letter-spacing: .05em;        /*...flydown from bottom of the top ul, and left and right... */
+    color: #ffffff;              /*...distances between edges of type and left of li */
+    text-decoration: none;
 }
 #menuh li a { padding: 7px 30px 6px 30px; }
 
 #menuh li a:hover {
-   color: #aaa;
+    color: #aaa;
     background-color: #fff;
 }
 #menuh li a.current_top_menu_item {
-   color: #a68338;
+    color: #a68338;
 }
 
-/*CONTROLS SECOND-LEVEL LIST ITEMS OR FLY-DOWNS*/ 
+/*CONTROLS SECOND-LEVEL LIST ITEMS OR FLY-DOWNS*/
 
-#menuh li ul {  
-   position: absolute;
-   margin: 0 0 0 0;
-   padding: 0;
-   left: -999em;
-   z-index: 1;
+#menuh li ul {
+    position: absolute;
+    margin: 0 0 0 0;
+    padding: 0;
+    left: -999em;
+    z-index: 1;
     box-shadow: 1px 2px 4px #777;
 }
 
 #menuh ul {
-   float: left;
-   padding: 0;
-   list-style: none;
-   width: 160px; /* can be anything AFAIK, but it has to be there*/
+    float: left;
+    padding: 0;
+    list-style: none;
+    width: 160px; /* can be anything AFAIK, but it has to be there*/
 }
 
-#menuh ul li { 
+#menuh ul li {
     float: left;
     margin: 0;
     padding: 0;
@@ -378,40 +378,40 @@ HORIZONTAL MENU
 }
 
 #menuh ul li a {
-   display: block;
-   padding: 8px 30px 5px 10px;
+    display: block;
+    padding: 8px 30px 5px 10px;
     color: #aaa;
-   background-color: #fff;
-   width: 120px; /* master width minus left & right padding */
-   border-top: 1px solid #ccc;
+    background-color: #fff;
+    width: 120px; /* master width minus left & right padding */
+    border-top: 1px solid #ccc;
 }
 
 #menuh ul li a:hover {
-   color: #ffffff;
-   background-color: #aaa; 
+    color: #ffffff;
+    background-color: #aaa;
 }
 
 /*CONTROLS THIRD-AND ABOVE LEVEL LIST ITEMS*/
-#menuh li ul li ul {   
-   margin: -22px 0 0 161px; /* the -top px vertically positions the right flyout */
+#menuh li ul li ul {
+    margin: -22px 0 0 161px; /* the -top px vertically positions the right flyout */
     width: 160px; /*...and the left margin is ul-li-a horiz spacing+width+1/0 */
 }
 
-#menuh li ul li ul li a {   
-   background-color: #aaa; 
+#menuh li ul li ul li a {
+    background-color: #aaa;
     color: #fff;
 }
-#menuh li ul li ul li a:hover {   
-   color: #aaa;
-   background-color: #fff; 
+#menuh li ul li ul li a:hover {
+    color: #aaa;
+    background-color: #fff;
 }
 
 /* lists nested under hovered list items */
 #menuh li:hover ul ul, #menuh li:hover ul ul ul, #menuh li:hover ul ul ul ul, #menuh li.sfhover ul ul, #menuh li.sfhover ul ul ul, #menuh li.sfhover ul ul ul ul {
-   left: -999em;
+    left: -999em;
 }
 #menuh li:hover ul, #menuh li li:hover ul, #menuh li li li:hover ul, #menuh li li li li:hover ul, #menuh li.sfhover ul, #menuh li li.sfhover ul, #menuh li li li.sfhover ul, #menuh li li li li.sfhover ul {
-   left: auto;
+    left: auto;
 }
 
 /* ----- footer menu --- */
@@ -421,57 +421,57 @@ HORIZONTAL MENU
     width: 850px;
     margin: 30px 0 0 0;
 }
-.menu2 { 
-   display: inline;
-   list-style: none;
-   width: 850px;
+.menu2 {
+    display: inline;
+    list-style: none;
+    width: 850px;
 }
 
 .menu2 li { float: left; margin: 0;}
 
 .menu2 li.top a {
-   text-transform: uppercase;
-   color: #555;
-   font-weight: bold;
-}  
+    text-transform: uppercase;
+    color: #555;
+    font-weight: bold;
+}
 
 .menu2 li a {
-   display:block;
-   font-size: 13px;
-   line-height: 18px;
+    display:block;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .menu2 li a:hover {
-   color: #aaa;
+    color: #aaa;
 }
 .menu2 li ul {
-   position: relative;
-   left: 0;
-   list-style: none;
+    position: relative;
+    left: 0;
+    list-style: none;
 }
 
 .menu2 ul {
-   float: left;
-   margin: 0;
-   padding: 0;
-   width: 140px; 
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 140px;
 }
 
 .menu2 ul li a {
-   display: block;
-   text-transform: capitalize !important;
-   text-align: left;
-   padding: 0;
-   width: 100px; 
-   line-height: 15px;
-   margin: 5px 0 0 0;
-   font-weight: normal !important
+    display: block;
+    text-transform: capitalize !important;
+    text-align: left;
+    padding: 0;
+    width: 100px;
+    line-height: 15px;
+    margin: 5px 0 0 0;
+    font-weight: normal !important
 }
 .menu2 ul li a:hover {
-   color: #999;
+    color: #999;
 }
 
-/*------------------------------------------------------------------------------   
+/*------------------------------------------------------------------------------
 SECONDARY NAV MENU
 ------------------------------------------------------------------------------*/
 
@@ -479,8 +479,8 @@ SECONDARY NAV MENU
     position:relative;
     top: 34px;
     float: right;
-   display: inline;
-   list-style: none;
+    display: inline;
+    list-style: none;
     z-index:999;
 }
 
@@ -499,39 +499,39 @@ SECONDARY NAV MENU
     color: #666;
 }
 
-/*------------------------------------------------------------------------------   
+/*------------------------------------------------------------------------------
 Sections
 ------------------------------------------------------------------------------*/
 
 .section {
-   float: left;
-   width: 100%;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-   -webkit-box-shadow: 0px 0px 10px 0px #bbbbbb;
-   box-shadow: 0px 0px 10px 0px #bbbbbb;
-   -webkit-border-radius: 5px;
-   border-radius: 5px;
-   margin-bottom: 15px;
-   background: #fff;
-   color: #0069aa;
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 10px 0px #bbbbbb;
+    box-shadow: 0px 0px 10px 0px #bbbbbb;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fff;
+    color: #0069aa;
 }
 
-.section { 
-   .dashtop {
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      padding: 8px 20px;
-   }
-   .dash_content {
-      /*float: left;*/
-      /*width: 100%;*/
-      padding: 10px 20px;
-   }
-   table {
-      width: 100%;
-   }
+.section {
+    .dashtop {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 8px 20px;
+    }
+    .dash_content {
+        /*float: left;*/
+        /*width: 100%;*/
+        padding: 10px 20px;
+    }
+    table {
+        width: 100%;
+    }
 }
 
 /*------------------------------------------------------------------------------
@@ -541,7 +541,7 @@ table {
     margin: 0 0;
 }
 
-table th { 
+table th {
     background-color: #999;
     color: #fff;
     padding: 5px 20px
