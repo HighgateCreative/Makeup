@@ -138,13 +138,14 @@ html, body {height: 100%;}
 
 .container {
     position: relative;
-   margin: 20px auto;
-   max-width: $max-width;
-   width: 100%;
+    margin: 20px auto;
+    max-width: $max-width;
+    width: 100%;
     overflow: auto;
     min-height: 100%;
     padding: 50px;
     background-color:#fff;
+    clear: both;
 }
 
 .dialog {

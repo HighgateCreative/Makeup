@@ -145,7 +145,8 @@ html, body {
   overflow: auto;
   min-height: 100%;
   padding: 50px;
-  background-color: #fff; }
+  background-color: #fff;
+  clear: both; }
 
 .dialog {
   margin: 0 auto 30px;
