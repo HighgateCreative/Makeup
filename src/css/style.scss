@@ -1,143 +1,138 @@
 /*------------------------------------------------------------------------------
 CLEAR THE DECKS
-------------------------------------------------------------------------------
-html,body, div, span, ul, ol, li, form, label, table, h1, h2, h3, h4, h5, h6, p, a, img  { 
-margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
-a img,:link img,:visited img { border: 0 }
-table{ border-collapse: collapse; border-spacing: 0; width: 100% }
-td, th, caption { padding: 2px 4px }
-h1, h2, h3, h4, h5, h6, p { font-weight: normal; }
-h1, h2, h3, h4, h5, h6 { word-spacing: 0.25px; }
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   /*font-weight: inherit;
-   font-style: inherit;
-   font-size: 100%;
-   font-family: inherit;*/
-   vertical-align: baseline;
+------------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    text-decoration: none;
 }
-/* remember to define focus styles! */
-:focus {
-   outline: 0;
-}
-
-/* grand catch */
-
 body {
-   line-height: 1;
-   color: #999;
-   background: white;
+    line-height: 1; /* set line-height multiplier to be used with font size*/
 }
 ol, ul {
-   list-style: none;
+    list-style: none;
 }
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-   border-collapse: separate;
-   border-spacing: 0;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 caption, th, td {
-   text-align: left;
-   font-weight: normal;
+    text-align: left;
+    font-weight: normal;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-   content: "";
+q {
+    quotes: "“" "”" "‘" "’";
 }
-blockquote, q {
-   quotes: "" "";
+blockquote:before, q:before {
+    content: open-quote;
 }
+blockquote:after, q:after {
+    content: close-quote;
+}
+ol li {
+    list-style-type: decimal;
+    margin-left: 25px;
+}
+ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+/* 
+div, aside, nav, header, section, footer {
+    @include box-sizing(border-box);
+}
+ */
 
+/*--------------
+Instead of floats (doesn't collapse the parent like floats)
+display: inline-block;
+margin-left: -4px; or PREFERRED: set parent to font-size: 0 or display: inline-table
+vertical-align: top;
+----------------*/
 /*------------------------------------------------------------------------------
 HIGHSITE HTML PREFERENCES
 ------------------------------------------------------------------------------*/
-* {
-   font-family: verdana, serif;
-}
+* { font-family: verdana, serif; }
 
-h1, h2, h3, h4, h5, h6, p {
-   margin-bottom: .8em;
+h1, h2, h3, h4, h5, h6, p { 
+    margin-bottom: .2em;
+    font-weight: normal;
 }
-
-h1, h2, h3, h4 {
-   letter-spacing: -.02em;
+h1, h2, h3, h4, h5, h6 {
+    word-spacing: 0.25px;
 }
-h1, h2, h3, h4, h5, h6 { word-spacing: 0.25px; }
-
-h1, h2, h3 {
-   line-height: 112%;
-}
-h4, h5, h6 {
-   line-height: 125%;
-}
+h1, h2, h3 { line-height: 1.10em; }
+h4, h5, h6 { line-height: 1.25em; }
 p, a, li, td, label {
-   line-height: 150%;
+    line-height: 1.5em;
 }
 
-h1 { color: #0069aa; }
+/* initial sizes—use /xm_client/editor.css for special TinyMCE editor styling*/
+h1 {
+    font-size: 2.2em;
+    line-height: 1.2em;
+}
+h2 {
+    font-size: 1.6em;
+    margin-top: .6em;
+}
+h3 {
+    font-size: 1.6em;
+    margin-top: .8em;
+}
+h4 {
+    font-size: 1.4em;
+    margin-top: .8em;
+}
+h5 {
+    font-size: 1.2em;
+    margin-top: .8em;
+}
+h6 { font-size: 1em; }
+p {
+    margin-top: .6em;
+}
+p, td { font-size: 100% }
+a, i, em, span, q {
+   color: inherit;
+   font-size: inherit;
+   font-weight: inherit;
+}
+b, strong {
+}
 
-h2 { color: #5b862c; }
+a {
+    text-decoration: none;
+    &:link, &:visited {
+        color: blue
+    }
 
-h3 { color: #c00; }
-
-/*------------------------------------------------------------------------------
-WEB.FONTS
-------------------------------------------------------------------------------*/   
-/*
-h1, h2, h3, h4, h5, h6, b, strong, th {
-   font-style: normal;
-   font-weight: 700;
+    &:hover {
+        color: gray;
+    }
 }
-h1+i, h2+i, h3+i, h4+i, h5+i, h6+i, b+i, strong+i,  b+i, strong+em {
-   font-style: italic;
-   font-weight: 700;
-}
-p, a, li, td, label {
-   font-style: normal;
-   font-weight: 300;
-}
-i, em {
-   font-style: italic;
-   font-weight: 300;
-}*/
-/* Monotype selectors */
-/*h1, h2, h3, h4, h5, h6, b, strong {
-   font-family:'LinotypeUniversW01-Blac 723733';
-   font-weight: normal;
-}
-p, a, li, td, label {
-   font-family: 'LinotypeUniversW01-Ligh 723625';
-}
-i, em {
-   font-family:'LinotypeUniversW01-LtCn';
-   font-style: normal;
-}*/
-
 /*------------------------------------------------------------------------------
 SITE-WIDE HTML
 ------------------------------------------------------------------------------*/   
 $max-width: 1000px;
+
 body {
    margin: 0;
-   background: #ccc; /*url(/xm_client/images/body-top-background.jpg) repeat-x top*/;
+   background: #fff; /*url(/xm_client/images/body-top-background.jpg) repeat-x top*/;
 }
 
-a { text-decoration: none; }
-a:link { color: #0069aa; }
-a:visited { color: #c51643; }
-a:hover { color: #666; }
-a:active { color: #c51643; }
 
 html, body {height: 100%;}
 
@@ -150,16 +145,6 @@ html, body {height: 100%;}
     min-height: 100%;
     padding: 50px;
     background-color:#fff;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-bottom-right-radius: 5px;
-    -o-border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-bottom-left-radius: 5px;
-    -o-border-bottom-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 2px 2px 10px #666;
 }
 
 .dialog {
@@ -167,20 +152,13 @@ html, body {height: 100%;}
     position:relative;
     width: 100%;
     max-width: $max-width;
-    border-radius: 6px;
-    background:-moz-linear-gradient(top,#fff 0%, #ddd 100%);
-    background:-webkit-linear-gradient(top,#fff 0%, #ddd 100%);
-    -moz-box-shadow: 0px 2px 6px 0px #999;
-    -webkit-box-shadow: 0px 2px 6px 0px #999;
-    box-shadow: 0px 2px 6px 0px #999;
-    overflow: hidden;
+
 }
 
 .dialog_topper {
-    background:-moz-linear-gradient(19% 75% 90deg,#183b6f,#0a4899);
-    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0a4899),to(#183b6f));
+    background-color: #0a4899;
     color: #fff;
-    padding: 10px 0px 10px 30px;
+    padding: 6px 0px 6px 30px;
 }
 .dialog_topper p {padding:0; margin:0;}
 
@@ -300,21 +278,12 @@ section, nav {
    padding: 20px 30px 20px 20px;
 }
 
-/* shadows */
-.intro, .left-box, .center-box, .right-box, .home-side-bar, .main_col, .right_col {
-   -webkit-box-shadow: 0px 6px 6px 0px #ccc;
-   box-shadow: 0px 6px 6px 0px #ccc;
-   /* For IE 8 */
-   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=180, Color='#cccccc')";
-   /* For IE 5.5 - 7 */
-   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=180, Color='#cccccc');
-}
 
 /*==============================================================================
 NAVIGATION  
 ==============================================================================*/      
 nav.nav {
-    max-width: $max-width;
+    max-width: 100%;
     width: 100%;
     display: block;
 }
@@ -323,12 +292,7 @@ nav.nav {
 Blue Navigation  
 ------------------------------------------------------------------------------*/      
 nav.bluenav {
-   /*position or float*/
-    background:-moz-linear-gradient(19% 75% 90deg,#183b6f,#0a4899);
-    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0a4899),to(#183b6f));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    box-shadow: 2px 2px 10px #666;
+    background-color: #0a4899;
 }
 
 /*------------------------------------------------------------------------------
@@ -359,6 +323,7 @@ HORIZONTAL MENU
 /*----- BELOW THREE DIVS CONTROL ALL LIST ITEMS -----*/
 
 #menuh li { 
+    list-style: none;
     float: left;
     margin: 0;
     border-top: 1px solid #296dc0;
