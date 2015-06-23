@@ -43,8 +43,8 @@ module.exports = function(grunt) {
     },
     watch: {
       gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+        files: ['src/**/*.scss'],
+        tasks: ['default']
       },
     },
     sass: {
